@@ -14,7 +14,7 @@ body {
   height: 33rem;
   z-index: 40;
   width: 30rem;
-  opacity: .9;
+  filter: drop-shadow(5px 5px 10px black);
   font-size: 20px;
   padding-top: 50px;
   font-family: 'Bradley Hand', sans-serif;
