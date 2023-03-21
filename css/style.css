@@ -4,6 +4,28 @@ body {
     background-repeat: no-repeat;
 }
 
+#modal {
+    background-image: url("../assets/blank.png");
+    position: absolute;
+    z-index: 1;
+    height: 40rem;
+    width: 30rem;
+    opacity: .9;
+    font-size: 20px;
+    padding-top: 20px;
+    font-family: 'Bradley Hand', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.closeBtn {
+    color: black;
+    padding-top: 10rem;
+    padding-left: 28rem;
+}
+
 .stamp {
     --r: 10px; /* control the radius of the circles */
     padding: calc(2*var(--r));

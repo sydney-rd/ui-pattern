@@ -2,8 +2,8 @@
 // germany.name.official will return name 
 // call 
 // mouse cursor
-const countriesImages = document.querySelectorAll(".country")
 
+const countriesImages = document.querySelectorAll(".stamp"); // gett
 const baseUrl = "https://restcountries.com/v3.1/name/"
 
 countriesImages.forEach((countryImg)=>{
@@ -17,15 +17,23 @@ countriesImages.forEach((countryImg)=>{
 
             let modalInfo = `
                 <h1>${e.target.dataset.countryname}</h1>
-                <h3>Capital: ${res[0].capital}</h3>
+                <p>Capital: ${res[0].capital}</p>
                 <p>Population: ${res[0].population}</p>
-                <p>${res[0].flag}</p>
+                <p>Continent: ${res[0].region}
+                <p>Flag: ${res[0].flag}</p>
+                <p class="closeBtn"> X </p>
             `
 
-            modal.insertAdjacentHTML("beforeend", modalInfo)
+            modal.classList.remove("hidden");
+            modal.insertAdjacentHTML("beforeend", modalInfo);
+        })
+        .then(() => {
+            document.querySelector(".closeBtn").addEventListener("click", () => {
+                modal.classList.add("hidden");
+            })
+
         })
     })
 })
-
 
 
