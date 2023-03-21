@@ -1,0 +1,31 @@
+body {
+    background-image: url("../assets/envelope.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.stamp {
+    --r: 10px; /* control the radius of the circles */
+    padding: calc(2*var(--r));
+    filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+    background: 
+      radial-gradient(var(--r),#0000 98%,#fff) round
+        calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+      linear-gradient(#fff 0 0)  no-repeat
+        50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+    height: 130px;
+    width: 130px;
+  }
+  
+  .stamp-container {
+    margin: 0;
+    padding-top: 30px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, max-content); /* two columns with equal width */
+    grid-auto-rows: max-content; /* adjust row height automatically based on content */
+    grid-gap: 30px;
+    justify-items: center; /* center items horizontally */
+    align-content: start; /* align items to the top of the container vertically */
+    justify-content: flex-end;
+  }
