@@ -3,7 +3,7 @@
 // call 
 // mouse cursor
 
-const countriesImages = document.querySelectorAll(".stamp"); // gett
+const countriesImages = document.querySelectorAll(".stamp"); 
 const baseUrl = "https://restcountries.com/v3.1/name/"
 
 countriesImages.forEach((countryImg)=>{
@@ -17,10 +17,12 @@ countriesImages.forEach((countryImg)=>{
 
             let modalInfo = `
                 <h1>${e.target.dataset.countryname}</h1>
+                This is the coolest country! Check it out..
                 <p>Capital: ${res[0].capital}</p>
                 <p>Population: ${res[0].population}</p>
                 <p>Continent: ${res[0].region}
                 <p>Flag: ${res[0].flag}</p>
+                <p>Bordering Countries: ${res[0].borders}</p>
                 <p class="closeBtn"> X </p>
             `
 

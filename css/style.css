@@ -1,53 +1,66 @@
 body {
-    background-image: url("../assets/envelope.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../assets/envelope.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 #modal {
-    background-image: url("../assets/blank.png");
-    position: absolute;
-    z-index: 1;
-    height: 40rem;
-    width: 30rem;
-    opacity: .9;
-    font-size: 20px;
-    padding-top: 20px;
-    font-family: 'Bradley Hand', sans-serif;
+  background-image: url("../assets/blank.png");
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  height: 33rem;
+  z-index: 40;
+  width: 30rem;
+  opacity: .9;
+  font-size: 20px;
+  padding-top: 50px;
+  font-family: 'Bradley Hand', sans-serif;
+  z-index: 100;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .closeBtn {
-    color: black;
-    padding-top: 10rem;
-    padding-left: 28rem;
+  color: black;
+  padding-top: 7.5rem;
+  padding-left: 28rem;
 }
 
 .stamp {
-    --r: 10px; /* control the radius of the circles */
-    padding: calc(2*var(--r));
-    filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
-    background: 
-      radial-gradient(var(--r),#0000 98%,#fff) round
-        calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
-      linear-gradient(#fff 0 0)  no-repeat
-        50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
-    height: 130px;
-    width: 130px;
-  }
+  --r: 10px; /* control the radius of the circles */
+  padding: calc(2*var(--r));
+  filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
+  background: 
+    radial-gradient(var(--r),#0000 98%,#fff) round
+      calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+    linear-gradient(#fff 0 0)  no-repeat
+      50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+  height: 125px;
+  width: 125px;
+}
   
-  .stamp-container {
-    margin: 0;
-    padding-top: 30px;
-    padding-right: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, max-content); /* two columns with equal width */
-    grid-auto-rows: max-content; /* adjust row height automatically based on content */
-    grid-gap: 30px;
-    justify-items: center; /* center items horizontally */
-    align-content: start; /* align items to the top of the container vertically */
-    justify-content: flex-end;
-  }
+.stamp-container {
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, max-content); /* two columns with equal width */
+  grid-auto-rows: max-content; /* adjust row height automatically based on content */
+  grid-gap: 30px;
+  justify-items: center; /* center items horizontally */
+  align-content: start; /* align items to the top of the container vertically */
+  justify-content: flex-end;
+}
+
+.address {
+  font-family: 'Bradley Hand', sans-serif;
+  padding-left: 32rem;
+  padding-top: 10rem;
+  font-size: 35px;
+  opacity: .6;
+}
