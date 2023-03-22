@@ -19,6 +19,7 @@ body {
   padding-top: 50px;
   font-family: 'Bradley Hand', sans-serif;
   z-index: 100;
+  padding-left: 10px;
 }
 
 .hidden {
