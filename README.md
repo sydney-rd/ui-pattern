@@ -1,13 +1,17 @@
 # UI Pattern
 
-I'm a travel, geography, and map enthusiast 🌏 I created this webpage using an API that shares simple facts and information about the countries of our world. These are a few of my favorite countries. Click each stamp to see the facts!
+I'm a travel, geography, and map enthusiast 🌏 
 
-Bonus: if you know where the "address" is from, we will be best friends.
+Inspired by a postcard I found from an old friend studying in 🇬🇧 London, I styled my project to emulate just that.
+
+Utilzing data from an API, each stamp on the envelope will reveal a country. When you click a stamp, it pulls specific facts about the country in the form of a handwritten note. 
+
+BONUS: if you know where the "address" is from - let's connect!
 
 # Run
 
-Open HTML page in your browser and click on the stamps and learn some new facts!
+This project is deployed via Github Pages. Click the link and click each stamp for a few facts about some of the countries that I find interesting.
 
 # Credits
 
-API: https://restcountries.com/
+Rest Countries API: https://restcountries.com/
