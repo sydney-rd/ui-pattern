@@ -16,7 +16,7 @@ body {
   width: 30rem;
   filter: drop-shadow(5px 5px 10px black);
   font-size: 1.3rem;
-  padding-top: 3rem;
+  padding-top: 2.6rem;
   z-index: 1;
   padding-left: 10px;
 }
@@ -27,8 +27,10 @@ body {
 
 .closeBtn {
   color: black;
-  padding-top: rem;
-  padding-left: 28rem;
+  display: flex;
+  justify-content: right;
+  padding-right: 1rem;
+  padding-top: 8rem;
 }
 
 .stamp {
@@ -52,8 +54,8 @@ body {
 }
 
 .address {
-  padding-left: 32rem;
-  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
   font-size: 2rem;
   opacity: .6;
 }

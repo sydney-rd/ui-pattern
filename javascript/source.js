@@ -11,7 +11,7 @@ countries.forEach((country) => {
 
         let borderingCountries = `<p>Bordering Countries: ${
           res[0].borders === undefined
-            ? "This country doesn't have any neighbors!"
+            ? "We have no neighbors!"
             : res[0].borders.join(", ")
         }</p>`;
 
