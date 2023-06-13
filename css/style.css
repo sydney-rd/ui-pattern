@@ -3,22 +3,21 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   cursor: pointer;
+  font-family: 'Bradley Hand', sans-serif;
 }
 
 #modal {
   background-image: url("../assets/blank.png");
   position: fixed;
   top: 50%;
-  left: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
-  height: 33rem;
-  z-index: 40;
+  height: 35rem; 
   width: 30rem;
   filter: drop-shadow(5px 5px 10px black);
-  font-size: 20px;
-  padding-top: 50px;
-  font-family: 'Bradley Hand', sans-serif;
-  z-index: 100;
+  font-size: 1.3rem;
+  padding-top: 3rem;
+  z-index: 1;
   padding-left: 10px;
 }
 
@@ -28,40 +27,33 @@ body {
 
 .closeBtn {
   color: black;
-  padding-top: 7.5rem;
+  padding-top: rem;
   padding-left: 28rem;
 }
 
 .stamp {
-  --r: 10px; /* control the radius of the circles */
+  --r: 10px;
   padding: calc(2*var(--r));
   filter: grayscale(.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
-  background: 
-    radial-gradient(var(--r),#0000 98%,#fff) round
-      calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
-    linear-gradient(#fff 0 0)  no-repeat
-      50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
-  height: 125px;
-  width: 125px;
+  background:
+    radial-gradient(var(--r), #0000 98%, #fff) round calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
+    linear-gradient(#fff 0 0) no-repeat 50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
+  height: 8rem;
+  width: 8rem;
 }
-  
+
 .stamp-container {
-  margin: 0;
-  padding-top: 30px;
-  padding-right: 30px;
+  padding-top: 3rem;
+  padding-right: 3rem;
   display: grid;
-  grid-template-columns: repeat(4, max-content); /* two columns with equal width */
-  grid-auto-rows: max-content; /* adjust row height automatically based on content */
-  grid-gap: 30px;
-  justify-items: center; /* center items horizontally */
-  align-content: start; /* align items to the top of the container vertically */
+  grid-template-columns: repeat(4, max-content);
+  grid-gap: 1.5rem;
   justify-content: flex-end;
 }
 
 .address {
-  font-family: 'Bradley Hand', sans-serif;
   padding-left: 32rem;
   padding-top: 10rem;
-  font-size: 35px;
+  font-size: 2rem;
   opacity: .6;
 }
