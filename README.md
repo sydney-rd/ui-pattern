@@ -10,7 +10,7 @@ BONUS: if you know where the "address" is from - let's connect!
 
 # Run
 
-This project is deployed via Github Pages. Click the link and click each stamp for a few facts about some of the countries that I find interesting.
+This project is deployed via Github Pages. Click this [Pages link](https://sydney-rd.github.io/ui-pattern/) and click each stamp for a few facts about some of the countries that I find interesting.
 
 # Credits
 
