@@ -1,6 +1,7 @@
 body, html {
   height: 110%;
 }
+
 body {
   background-image: url("../assets/envelope.jpeg");
   background-size: cover;
