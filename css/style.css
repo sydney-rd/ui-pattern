@@ -1,9 +1,14 @@
+body, html {
+  height: 110%;
+}
 body {
   background-image: url("../assets/envelope.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   cursor: pointer;
   font-family: 'Bradley Hand', sans-serif;
+  overflow: hidden;
 }
 
 #modal {
